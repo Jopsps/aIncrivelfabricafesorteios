@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+    <title>A Incrível Fábrica de Sorteios</title>
+</head>
+<body class="main">
+    <header class="cabecalho">Sorteador Online!</header>
+    
+    <section class="main__block__principal">
+        <h1 class="main__block__principal__titulo">A Incrível Fábrica de Sorteios</h1>
+        <div class="main__block__principal__titulo__pp">
+            <p class="main__block__principal__titulo__p">Realize sorteios online de forma gratuita! Basta um clique para descobrir o vencedor!</p>
+            <p class="main__block__principal__titulo__p">Rápido, fácil e dinâmico!</p>
+        </div>
+    </section>
+    
+    <section class="main__block__sorteio">
+        <h3 class="main__block__sorteio__titulo__resultado__list">RESULTADO</h3>
+    </section>
+    
+    <h1>Nome Sorteado:</h1>
+    <ul>
+        {% for name in random_names %}
+            <li class="sorteado__list">{{ name }}</li>
+        {% endfor %}
+    </ul>
+    <div class="voltar_result__list__contains">
+        <a href="/" class="voltar_result__list">Voltar</a>
+    </div>
+    <footer class="footer">
+        <p>Desenvolvido por:</p>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">LinkedIn</a>
+    </footer>
+</body>
+</html>

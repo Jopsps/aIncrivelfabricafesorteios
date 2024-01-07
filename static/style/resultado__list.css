@@ -1,0 +1,34 @@
+.main__block__sorteio__titulo__resultado__list{
+    color: #cc3366;
+}
+.sorteado__list {
+    color: #cc3366;
+    font-size: 4rex;  /* Aumenta o tamanho da fonte */
+    list-style: none;  /* Remove o estilo padrão de lista */
+}
+.sorteado__list::before {
+    content: '\2022';  /* Adiciona um ponto usando o código unicode */
+    color: #cc3366;
+    margin-right: 5px;  /* Adiciona um espaço entre o ponto e o texto */
+}
+.voltar_result__list__contains {
+    text-align: center;  /* Centraliza o conteúdo horizontalmente */
+    margin-top: 50px;   /* Adiciona espaço acima do botão */
+    margin-bottom: 50px;  /* Adiciona espaço abaixo do botão */
+}
+
+.voltar_result__list {
+    background-color: #cc3366;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    display: inline-block;  /* Certifica-se de que o botão é exibido em linha para respeitar o tamanho */
+}
+
+.voltar_result__list:hover {
+    background-color: #ad2953;
+    box-shadow: 0 0 10px rgba(204, 51, 102, 0.8);
+}
